@@ -1,0 +1,22 @@
+int main() {
+  int counter3;
+  int counter5; 
+  int sum;
+  int threeMult;
+  int fiveMult;
+
+  for (counter3 = 3; counter3 < 1000; counter3 += 3) {
+    sum += counter3;
+  }
+
+  for (counter5 = 5; counter5<1000; counter5 += 5) {
+    sum += counter5;
+  }
+
+  return sum;
+}
+
+
+
+  
+    

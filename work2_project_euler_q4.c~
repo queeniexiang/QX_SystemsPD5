@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+  long largest = 0;
+  long counter = 100;
+  long storage, remainder;
+
+
+  while (counter < 1000) {
+    long tracker = 999; 
+    long current = counter * tracker;
+    long temp = current; 
+    long backwards; 
+
+    while (temp > 0) {
+      remainder = temp % 10;
+      backwards = backwards * 10 + remainder;
+      temp /= 10;
+    }
+
+    if (backwards == current) {
+      storage = current;
+    }
+
+    counter++; 
+  }
+
+  printf("%d", storage);
+
+  return storage; 
+}
+
+      
+      
+    
+    

@@ -1,0 +1,25 @@
+//2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+  int number = 2;
+  int counter = 3; 
+
+  for (counter = 3; counter <= 20; counter+=1) {
+    if (number % counter == 0) {
+      printf("Smallest positive number that can evenly divide all numbers from 1 to 20 is: %d", number);
+      return number;
+    }
+
+    else {
+      number *= counter;
+    }
+  }
+  
+  return number;
+
+} 
+    

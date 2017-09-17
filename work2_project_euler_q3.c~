@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+  long counter;
+  long prime_factor = 600851475143;
+
+
+  for (counter = 2; counter < 600851475143; counter += 1) {
+    if (prime_factor % counter == 0) {
+      prime_factor /= counter;
+    }
+  }
+
+  printf("%l", prime_factor); 
+  return prime_factor;
+}
+
+
+
+
+    
